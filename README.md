@@ -31,8 +31,16 @@ Training outputs are saved under `runs/<model>/<optimizer>_bs<batch_size>/`:
 
 ## Compare Network Structures
 
+Windows PowerShell:
+
 ```powershell
 .\run_all_models.ps1
+```
+
+Linux/macOS:
+
+```bash
+bash run_all_models.sh
 ```
 
 Recommended fixed setting for the report:
@@ -48,16 +56,32 @@ augmentation = RandomCrop + RandomHorizontalFlip + Normalize
 
 ## Compare Optimizers
 
+Windows PowerShell:
+
 ```powershell
 .\run_optimizers.ps1
+```
+
+Linux/macOS:
+
+```bash
+bash run_optimizers.sh
 ```
 
 This compares `sgd`, `momentum`, `adam`, `adamw`, and `rmsprop` on the ResNet model.
 
 ## Compare Batch Sizes
 
+Windows PowerShell:
+
 ```powershell
 .\run_batch_sizes.ps1
+```
+
+Linux/macOS:
+
+```bash
+bash run_batch_sizes.sh
 ```
 
 The script uses a simple linear learning-rate rule:
