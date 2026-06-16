@@ -1,0 +1,5 @@
+__pycache__/
+*.py[cod]
+runs/
+smoke_runs/
+.ipynb_checkpoints/
